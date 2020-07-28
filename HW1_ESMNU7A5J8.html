@@ -3,66 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nyakpo Michael</title>
+    <title>NYAKPO MICHAEL</title>
     <style>
-      input {
-        width: 700px;
-        height: 30px;
-      }
+      input[type="text"],
       select {
-        width: 700px;
-        height: 30px;
-        font-size: large;
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        border-color: white;
+        box-sizing: border-box;
+        font-size: 20px;
       }
-      .button {
-        background-color: rgb(49, 206, 1);
-        width: 80px;
-        height:30px;
-        margin-top: 10px;
+
+      input[type="submit"] {
+        width: 90px;
+        height: 40px;
+        background-color: green;
+        color: white;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
       }
-      form{
-          background-color: rgb(145, 142, 139);
-          width: 800px;
+
+      input[type="submit"]:hover {
+        background-color: rgb(0, 195, 255);
+        width: 90px;
       }
-      #space{
-          width:700px;
-          height:50px
+
+      .form {
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        width: 50%;
+        padding: 20px;
+        margin: 5% 20%;
+      }
+      label {
+        font-size: 30px;
+      }
+      textarea {
+        width: 90%;
+      }
+      .all {
+        margin: 0px 0px 0px 50px;
+        padding: 0;
       }
     </style>
   </head>
   <body>
-    <form action="">
-      <label for="fisrtName"> First Name</label>
-
-      <br />
-      <input type="text" placeholder="First name.." />
-    <br />
-    <label for="lastName">last Name</label>
-    <br />
-    <input type="text" placeholder="First name.." /><br />
-    <label for="">Country</label>
-    <br />
-    <select name="" id="space">
-      <option value="">DR Congo</option>
-      <option value="">Iraq</option>
-      <option value="">Benin</option>
-      <option value="">Nigeria</option>
-      <option value="">Mali</option>
-      <option value="">Isreal</option>
-       <option value="">Togo</option>
-    </select>
-    <br />
-    <label for="">Subject</label>
-    <br />
-    <textarea
-      placeholder="write something"
-      name=""
-      id=""
-      cols="95"
-      rows="15"
-    ></textarea>
-    <br />
-    <input class="button" type="submit" value="submit" >
-     </form>
+    <div class="form">
+      <form action="">
+        <div class="all">
+          <label for="firstName">First Name</label>
+          <br />
+          <input placeholder="Your First Name" type="text" />
+          <br />
+          <label for="lastName">Last Name</label>
+          <br />
+          <input placeholder="Your Last Name" type="text" />
+          <br />
+          <label for=""> country</label>
+          <br />
+          <select name="" id="">
+            <option value="">Australia</option>
+            <option value="">Japan</option>
+            <option value="">China</option>
+            <option value="">Ghana</option>
+            <option value="">Togo</option>
+            <option value="">Nigeria</option>
+            <option value="">Liberia</option>
+          </select>
+          <br />
+          <label for="">subject</label>
+          <br />
+          <textarea
+            placeholder="write something"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
